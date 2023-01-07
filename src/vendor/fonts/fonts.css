@@ -1,0 +1,8 @@
+@font-face {
+  src: 
+    url(./DodoRounded_v2-Medium.woff2) format('woff2'),
+    url(./DodoRounded_v2-Medium.woff) format('woff'),
+    url(./DodoRounded_v2-Medium.ttf) format('truetype');
+  font-family: 'DodoRounded';
+  font-weight: 400;
+}
