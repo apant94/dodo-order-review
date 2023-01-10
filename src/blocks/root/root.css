@@ -3,5 +3,10 @@
   max-width: 375px;
   margin: 0 auto;
   --title-color: #FFFFFF;
+  --title-size: 56px;
   --text-color: #ABADBA;
+  --text-size: 15px;
+  --font-weigth-s: 400;
+  --font-weigth-m: 480;
+  --font-weigth-l: 600;
 }
