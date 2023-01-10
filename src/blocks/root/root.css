@@ -1,12 +1,10 @@
 .root {
-  background: #1A1A1A;
-  max-width: 375px;
-  margin: 0 auto;
   --title-color: #FFFFFF;
+  --input-border-color: #FFFFFF;
   --title-size: 56px;
   --text-color: #ABADBA;
-  --text-size: 15px;
+  --text-size: 14px;
   --font-weigth-s: 400;
   --font-weigth-m: 480;
-  --font-weigth-l: 600;
+  background: #1A1A1A;
 }

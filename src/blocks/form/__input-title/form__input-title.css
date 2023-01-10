@@ -1,7 +1,7 @@
 .form__input-title {
-  font-weight: var(--font-weigth-l);
+  font-weight: var(--font-weigth-s);
   font-size: var(--text-size);
   line-height: 1.33;
-  margin: 0 0 10px;
+  margin: 0;
   color: var(--title-color);
 }

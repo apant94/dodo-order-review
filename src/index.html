@@ -11,7 +11,7 @@
   <body class="root">
     <div class="page">
       <header class="header">
-        <div class="header__logo"></div>
+        <a class="header__link" href="https://dodopizza.ru/" target="_blank" rel="noopener noreferrer"><div class="header__logo"></div></a>
       </header>
       <main class="main">
         <section class="review">
@@ -28,13 +28,15 @@
             </div>
             <div class="form__container">
               <h2 class="form__input-title">2. Ваш отзыв или комментарий к заказу</h2>
-              <textarea></textarea>
+              <textarea class="form__comment" id="comment" name="comment" maxlength="500" placeholder="Комментарий"></textarea>
             </div>
             <div class="form__container">
               <h2 class="form__input-title">3. Фото чека и продукта (если есть) *</h2>
+              <p class="form__paragraph">* Фото чека поможет нам быстрее найти ваш заказ. А фото продукта — увидеть и решить проблему.</p>
             </div>
             <div class="form__container">
               <h2 class="form__input-title">4. Номер телефона, с которого сделан заказ *</h2>
+              <p class="form__paragraph">* Так мы узнаем вас и сможем улучшить имеено ваш опыт</p>
             </div>
           </form>
         </section>

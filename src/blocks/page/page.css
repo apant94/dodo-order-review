@@ -1,5 +1,6 @@
 .page {
-  min-width: 320px;
+  width: 84%;
+  max-width: 375px;
   margin: 0 auto;
   padding: 0 0 17px;
   font-family: 'DodoRounded', 'Arial', 'Helvetica', sans-serif;

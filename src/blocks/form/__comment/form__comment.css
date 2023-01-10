@@ -1,0 +1,12 @@
+.form__comment {
+  resize: none;
+  height: calc(88px - 15px - 15px);
+  border-radius: 11px;
+  border: .9px solid var(--input-border-color);
+  padding: 15px 15px;
+  background-color: transparent;
+  color: var(--text-color);
+  font-weight: var(--font-weigth-s);
+  font-size: var(--text-size);
+  line-height: 1.45;
+}
