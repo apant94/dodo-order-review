@@ -13,3 +13,10 @@
 @import url(../blocks/form/__container/form__container.css);
 @import url(../blocks/form/__input-title/form__input-title.css);
 @import url(../blocks/form/__comment/form__comment.css);
+@import url(../blocks/form/__file-container/form__file-container.css);
+@import url(../blocks/form/__file/form__file.css);
+@import url(../blocks/form/__file-button/form__file-button.css);
+@import url(../blocks/form/__file-icon/form__file-icon.css);
+@import url(../blocks/form/__file-text/form__file-text.css);
+@import url(../blocks/form/__paragraph/form__paragraph.css);
+@import url(../blocks/form/__phone/form__phone.css);

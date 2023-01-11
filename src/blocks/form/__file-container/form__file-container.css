@@ -1,0 +1,7 @@
+.form__file-container {
+  border: .9px solid var(--file-color);
+  border-radius: 96px;
+  height: 46px;
+  width: 100%;
+  position: relative;
+}

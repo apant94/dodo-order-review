@@ -1,0 +1,7 @@
+.form__paragraph {
+  font-weight: var(--font-weigth-s);
+  font-size: var(--paragraph-size);
+  line-height: 1.44;
+  color: var(--text-color);
+  margin: 0;
+}

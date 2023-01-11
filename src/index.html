@@ -16,7 +16,7 @@
       <main class="main">
         <section class="review">
           <h1 class="review__title">Как вам заказ?</h1>
-          <p class="review__definition">Поставьте оценку заказу и оставьте ваш отзыв ниже. Мы свяжемся с вами, если что&#8209;то пошло не так</p>
+          <p class="review__definition">Поставьте оценку заказу и оставьте отзыв ниже. Мы свяжемся с вами, если что&#8209;то пошло не так</p>
           <form class="form">
             <div class="form__container">
               <h2 class="form__input-title">1. Оцените заказ</h2>
@@ -28,15 +28,23 @@
             </div>
             <div class="form__container">
               <h2 class="form__input-title">2. Ваш отзыв или комментарий к заказу</h2>
-              <textarea class="form__comment" id="comment" name="comment" maxlength="500" placeholder="Комментарий"></textarea>
+              <textarea class="form__comment" id="form__comment" name="form__comment" maxlength="500" placeholder="Комментарий"></textarea>
             </div>
             <div class="form__container">
-              <h2 class="form__input-title">3. Фото чека и продукта (если есть) *</h2>
-              <p class="form__paragraph">* Фото чека поможет нам быстрее найти ваш заказ. А фото продукта — увидеть и решить проблему.</p>
+              <h2 class="form__input-title">3. Фото и продукта (если есть) *</h2>
+              <div class="form__file-container">
+                <input class="form__file" type="file" name="form__file" id="form__file">
+                <label for="form__file" class="form__file-button">
+                  <img class="form__file-icon" src="<%=require('./images/file-icon.svg')%>" alt="Загрузить фото">
+                  <span class="form__file-text">Загрузить фото</span>
+                </label>
+              </div>
+              <p class="form__paragraph">* Фото продукта поможет нам увидеть и решить проблему</p>
             </div>
             <div class="form__container">
               <h2 class="form__input-title">4. Номер телефона, с которого сделан заказ *</h2>
-              <p class="form__paragraph">* Так мы узнаем вас и сможем улучшить имеено ваш опыт</p>
+              <input class="form__phone" type="tel" name="form__phone" id="form__phone">
+              <p class="form__paragraph">* Так мы найдем ваш заказ и сможем улучшить именно ваш опыт</p>
             </div>
           </form>
         </section>

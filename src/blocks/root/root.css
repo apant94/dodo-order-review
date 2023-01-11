@@ -1,10 +1,14 @@
 .root {
   --title-color: #FFFFFF;
-  --input-border-color: #FFFFFF;
-  --title-size: 56px;
   --text-color: #ABADBA;
+  --input-border-color: #FFFFFF;
+  --file-color: #FF6900;
+  --title-size: 56px;
   --text-size: 14px;
+  --paragraph-size: 12.5px;
   --font-weigth-s: 400;
   --font-weigth-m: 480;
+  --font-weigth-l: 600;
+  --input-border-radius: 11px;
   background: #1A1A1A;
 }
