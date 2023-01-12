@@ -11,6 +11,7 @@
 @import url(../blocks/review/__definition/review__definition.css);
 @import url(../blocks/form/form.css);
 @import url(../blocks/form/__container/form__container.css);
+@import url(../blocks/form/__container/_type/form__container_type_terms.css);
 @import url(../blocks/form/__input-title/form__input-title.css);
 @import url(../blocks/form/__comment/form__comment.css);
 @import url(../blocks/form/__file-container/form__file-container.css);
@@ -20,3 +21,5 @@
 @import url(../blocks/form/__file-text/form__file-text.css);
 @import url(../blocks/form/__paragraph/form__paragraph.css);
 @import url(../blocks/form/__phone/form__phone.css);
+@import url(../blocks/form/__terms/form__terms.css);
+@import url(../blocks/form/__terms-label/form__terms-label.css);

@@ -2,6 +2,6 @@
   font-weight: var(--font-weigth-l);
   font-size: 16px;
   line-height: 1.41;
-  color: var(--file-color);
+  color: var(--orange-color);
   transform: translate(0,-10%);
 }
