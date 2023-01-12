@@ -2,24 +2,6 @@
   width: 0.1px;
 	height: 0.1px;
 	opacity: 0;
-	overflow: hidden;
 	position: absolute;
 	z-index: -1;
 }
-
-/* .form__terms+label {
-  position: relative;
-  display: inline-flex;
-  cursor: pointer;
-}
-
-.form__terms+label::before {
-  position: absolute;
-  display: inline-block;
-  content: '';
-  width: 22.3px;
-  height: 22.3px;
-  border: 1px solid var(--orange-color);
-  margin-top: 5px;
-  border-radius: 6.2px;
-} */

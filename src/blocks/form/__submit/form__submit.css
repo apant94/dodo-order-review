@@ -1,0 +1,13 @@
+.form__submit {
+  background: var(--orange-color);
+  border-radius: 23px;
+  width: 100%;
+  height: 46px;
+  border: none;
+  font-weight: var(--font-weigth-s);
+  font-size: var(--button-text-size);
+  line-height: 1.41;
+  color: var(--title-color);
+  padding: 0;
+  text-align: center;
+}
