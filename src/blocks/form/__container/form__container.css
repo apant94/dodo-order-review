@@ -5,6 +5,6 @@
 }
 
 .form__container:nth-child(4) {
-  border-bottom: .6px solid var(--separator-border-color);
+  border-bottom: 1.3px solid var(--separator-border-color);
   padding-bottom: 25px;
 }

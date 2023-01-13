@@ -33,7 +33,7 @@
   cursor: pointer;
   visibility: hidden;
   opacity: 0;
-  transition: opacity .5s linear;
+  transition: opacity .2s linear;
 }
 
 .form__terms:checked + .form__terms-label::after {
