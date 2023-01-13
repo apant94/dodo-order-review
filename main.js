@@ -1,0 +1,1 @@
+(()=>{"use strict";document.querySelector(".form__comment").addEventListener("keyup",(function(){this.scrollTop>0&&(this.style.height=this.scrollHeight+"px")}))})();
