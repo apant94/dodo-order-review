@@ -1,16 +1,16 @@
 .root {
   --title-color: #FFFFFF;
-  --text-color: #ABADBA;
-  --input-border-color: #FFFFFF;
+  --text-color: #C2C2C2;
+  --input-border-color: #C2C2C2;
   --orange-color: #FF6900;
-  --separator-border-color: #E2E2E9;
+  --separator-border-color: rgba(255, 255, 255, .2);
   --title-size: 56px;
-  --text-size: 14px;
-  --button-text-size: 16px;
-  --paragraph-size: 12.5px;
+  --text-size: 15px;
+  --button-text-size: 17px;
+  --paragraph-size: 12px;
   --font-weigth-s: 400;
   --font-weigth-m: 480;
   --font-weigth-l: 600;
-  --input-border-radius: 11px;
+  --input-border-radius: 11.5px;
   background: #1A1A1A;
 }
