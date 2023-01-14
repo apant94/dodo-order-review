@@ -1,24 +1,23 @@
 import './index.css';
 
-// Растягивание по мере заполнения отзыва
+// Растягивание textarea по мере заполнения отзыва и заполнение счетчика
 
 const textarea = document.querySelector('.form__comment');
-
-// textarea.addEventListener('keyup', function(){
-//   console.log(this.style);
-//   if(this.scrollTop > 0){
-//     this.style.height = this.scrollHeight + "px";
-//   }
-// });
+const counter = document.querySelector(".form__comment-number");
 
 function putComment() {
-  textarea.setAttribute("style", "height:" + (textarea.scrollHeight - 30) + "px;");
-  textarea.addEventListener("input", onInput, false);
+  textarea.setAttribute("style", "height:" + (textarea.scrollHeight - 38) + "px;");
+  textarea.addEventListener("input", onCommentInput, false);
+  textarea.addEventListener("input", countSymbols);
 };
 
-function onInput() {
-  this.style.height = '28px';
-  this.style.height = (this.scrollHeight) + "px";
+function onCommentInput() {
+  this.style.height = '54px';
+  this.style.height = (this.scrollHeight - 38) + "px";
+};
+
+function countSymbols() {
+  counter.textContent = `${textarea.value.length}`;
 };
 
 putComment();

@@ -1,0 +1,4 @@
+.form__terms-link {
+  color: var(--orange-color);
+  text-decoration: underline;
+}
