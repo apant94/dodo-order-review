@@ -5,7 +5,3 @@
 	position: absolute;
 	z-index: -1;
 }
-
-.form__rating-wrapper:not(:checked) > .form__rating-item {
-	display: none;
-}
