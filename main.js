@@ -1,1 +1,1 @@
-(()=>{"use strict";var t=document.querySelector(".form__comment");t.setAttribute("style","height:"+(t.scrollHeight-30)+"px;"),t.addEventListener("input",(function(){this.style.height="28px",this.style.height=this.scrollHeight+"px"}),!1)})();
+(()=>{"use strict";var t=document.querySelector(".form__comment");t.setAttribute("style","height:"+(t.scrollHeight-38)+"px;"),t.addEventListener("input",(function(){this.style.height="54px",this.style.height=this.scrollHeight-38+"px"}),!1)})();
