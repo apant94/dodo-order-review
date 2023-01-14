@@ -15,6 +15,9 @@
 @import url(../blocks/form/__container/_type/form__container_type_comment.css);
 @import url(../blocks/form/__container/_type/form__container_type_terms.css);
 @import url(../blocks/form/__input-title/form__input-title.css);
+@import url(../blocks/form/__rating-wrapper/form__rating-wrapper.css);
+@import url(../blocks/form/__rating-item/form__rating-item.css);
+@import url(../blocks/form/__rating-label/form__rating-label.css);
 @import url(../blocks/form/__comment/form__comment.css);
 @import url(../blocks/form/__comment-counter/form__comment-counter.css);
 @import url(../blocks/form/__file-container/form__file-container.css);

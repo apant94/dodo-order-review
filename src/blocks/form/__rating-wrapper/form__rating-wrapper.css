@@ -1,0 +1,7 @@
+.form__rating-wrapper {
+  overflow: hidden;
+  height: 53px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}

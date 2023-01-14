@@ -1,0 +1,32 @@
+.form__rating-label {
+  color: transparent;
+  /* width: 55.5px;
+  height: 53px;
+  background-image: url(../../../images/rating-star.svg);
+  background-repeat: no-repeat; */
+}
+
+.form__rating-wrapper:not(:checked) > .form__rating-label {
+	float: right;
+	width: 55.5px;
+	cursor: pointer;
+  width: 55.5px;
+  height: 53px;
+  background-image: url(../../../images/rating-star.svg);
+  background-repeat: no-repeat;
+
+}
+
+.form__rating-wrapper:not(:checked) > .form__rating-label::before {
+	content: '';
+  /* width: 55.5px;
+  height: 53px;
+  background-image: url(../../../images/rating-star.svg);
+  background-repeat: no-repeat; */
+  overflow: hidden;
+  z-index: 2;
+}
+
+.form__rating-wrapper > .form__rating-item:checked ~ .form__rating-label {
+	background-color: var(--orange-color);
+}
