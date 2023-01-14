@@ -1,0 +1,10 @@
+.header__pizza-image {
+  position: absolute;
+  width: 126px;
+  height: 220px;
+  top: 0px;
+  right: 0px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

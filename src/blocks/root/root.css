@@ -6,6 +6,7 @@
   --separator-border-color: rgba(255, 255, 255, .2);
   --title-size: 56px;
   --text-size: 15px;
+  --counter-size: 10.5px;
   --button-text-size: 17px;
   --paragraph-size: 12px;
   --font-weigth-s: 400;
@@ -13,4 +14,5 @@
   --font-weigth-l: 600;
   --input-border-radius: 11.5px;
   background: #1A1A1A;
+  position: relative;
 }

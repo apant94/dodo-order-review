@@ -9,3 +9,8 @@
   font-size: var(--text-size);
   line-height: 1.45;
 }
+
+.form__phone:focus {
+  outline: none !important;
+  border: 1px solid var(--orange-color);
+}
