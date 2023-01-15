@@ -3,17 +3,17 @@
 	padding: 0;
 	cursor: pointer;
 	font-size: 67px;
-	line-height: 35px;
+	/* line-height: 35px; */
 	color: #1A1A1A;
   text-shadow: 0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color);
 } 
 
-.form__rating-wrapper:not(:checked) > .form__rating-label::before {
+.form__rating-label::before {
 	content: '★';
-	font-size: 56px;
+	font-size: 67px;
 }
 
-.form__rating-wrapper > .form__rating-item:checked ~ .form__rating-label {
+.form__rating-item:checked ~ .form__rating-label {
 	color: var(--orange-color);
 }
 

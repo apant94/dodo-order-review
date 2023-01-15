@@ -1,0 +1,12 @@
+.footer__info-item {
+  font-weight: var(--font-weigth-s);
+  font-size: var(--footer-info-size);
+  line-height: 1.43;
+  color: var(--text-color);
+  text-decoration: none;
+  opacity: var(--text-opacity);
+}
+
+.footer__info-item:hover {
+  opacity: 1;
+}

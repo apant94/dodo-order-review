@@ -1,8 +1,8 @@
-.form__paragraph {
-  font-weight: var(--font-weigth-s);
-  font-size: var(--paragraph-size);
-  line-height: 1.33;
-  color: var(--text-color);
+.footer__copyright {
   margin: 0;
+  font-weight: var(--font-weigth-s);
+  font-size: var(--footer-copyright-size);
+  line-height: 1;
+  color: var(--text-color);
   opacity: var(--text-opacity);
 }

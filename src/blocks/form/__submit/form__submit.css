@@ -10,4 +10,5 @@
   color: var(--title-color);
   padding: 0;
   text-align: center;
+  cursor: pointer;
 }
