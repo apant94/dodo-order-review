@@ -1,0 +1,8 @@
+.footer__logo {
+  background-image: url(../../../images/footer-logo.svg);
+  height: 13px;
+  width: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3px 0 0;
+}

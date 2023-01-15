@@ -1,0 +1,8 @@
+.footer__info-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}

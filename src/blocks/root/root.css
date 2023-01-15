@@ -7,12 +7,15 @@
   --title-size: 56px;
   --text-size: 15px;
   --counter-size: 10.5px;
+  --footer-info-size: 14px;
+  --footer-copyright-size: 16px;
   --button-text-size: 17px;
   --paragraph-size: 12px;
   --font-weigth-s: 400;
   --font-weigth-m: 480;
   --font-weigth-l: 600;
   --input-border-radius: 11.5px;
+  --text-opacity: .7;
   background: #1A1A1A;
   position: relative;
 }
