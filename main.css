@@ -15,7 +15,7 @@
 .form__container_type_comment{position:relative}
 .form__container_type_terms{display:inline-block;width:100%}
 .form__input-title{color:var(--title-color);font-size:var(--text-size);font-weight:var(--font-weigth-s);line-height:1.33;margin:0}
-.form__rating-wrapper{display:flex;flex-direction:row-reverse;height:67px;justify-content:space-between;width:100%}
+.form__rating-wrapper{display:flex;flex-direction:row-reverse;height:77px;justify-content:space-between;width:100%}
 .form__rating-item{height:.1px;opacity:0;position:absolute;width:.1px;z-index:-1}
 .form__rating-label{color:#1a1a1a;cursor:pointer;float:right;font-size:67px;line-height:35px;padding:0;text-shadow:0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color)}.form__rating-label:before{content:"★";font-size:67px}.form__rating-item:checked~.form__rating-label{color:var(--orange-color)}.form__rating-wrapper>.form__rating-label:active{position:relative}
 .form__comment{background-color:transparent;border:.9px solid var(--input-border-color);border-radius:var(--input-border-radius);color:var(--title-color);font-size:var(--text-size);font-weight:var(--font-weigth-s);height:54px;line-height:1.45;padding:15px 15px 23px;resize:none}.form__comment::-moz-placeholder{color:var(--text-color)}.form__comment::placeholder{color:var(--text-color)}.form__comment:focus{border:1px solid var(--orange-color);outline:none!important}
