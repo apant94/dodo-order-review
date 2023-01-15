@@ -40,9 +40,3 @@ function countFiles(evt) {
 }
 
 fileInput.addEventListener('change', countFiles);
-
-// Сброс стандартного поведения submit формы
-
-form.addEventListener('click', (evt) => {
-  evt.preventDefault();
-})
