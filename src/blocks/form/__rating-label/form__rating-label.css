@@ -1,30 +1,16 @@
 .form__rating-label {
-  /* color: transparent;
-  width: 55.5px;
-  height: 53px;
-  background-image: url(../../../images/rating-star.svg);
-  background-repeat: no-repeat; */
   float: right;
-	width: 42px;
 	padding: 0;
 	cursor: pointer;
-	font-size: 53px;
-	line-height: 53px;
+	font-size: 67px;
+	line-height: 35px;
 	color: #1A1A1A;
   text-shadow: 0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color);
-
-/* .form__rating-wrapper:not(:checked) > .form__rating-label {
-	float: right;
-	cursor: pointer;
-  font-size: 70px;
-  width: 55.5px;
-	line-height: 70px;
-	color: #1A1A1A;
-  padding: 0; */
 } 
 
 .form__rating-wrapper:not(:checked) > .form__rating-label::before {
 	content: '★';
+	font-size: 56px;
 }
 
 .form__rating-wrapper > .form__rating-item:checked ~ .form__rating-label {
