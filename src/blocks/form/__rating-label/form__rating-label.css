@@ -1,22 +1,6 @@
 .form__rating-label {
-  float: right;
-	padding: 0;
-	cursor: pointer;
-	font-size: 67px;
-	/* line-height: 35px; */
-	color: #1A1A1A;
-  text-shadow: 0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color),0 0 1px var(--orange-color);
-} 
-
-.form__rating-label::before {
-	content: '★';
-	font-size: 67px;
-}
-
-.form__rating-item:checked ~ .form__rating-label {
-	color: var(--orange-color);
-}
-
-.form__rating-wrapper > .form__rating-label:active {
-	position: relative;
+	color: transparent;
+  transition: color 0.2s ease-in-out;
+  width: 53px;
+  height: 50px;
 }

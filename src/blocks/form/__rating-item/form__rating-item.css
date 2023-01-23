@@ -5,3 +5,8 @@
 	position: absolute;
 	z-index: -1;
 }
+
+.form__rating-item:focus ~ .form__rating-label .form__rating-star,
+.form__rating-item:checked ~ .form__rating-label .form__rating-star {
+  color: #FF6900;
+}
