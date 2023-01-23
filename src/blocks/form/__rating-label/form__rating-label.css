@@ -1,6 +1,5 @@
 .form__rating-label {
 	color: transparent;
-  transition: color 0.2s ease-in-out;
   width: 53px;
   height: 50px;
 }

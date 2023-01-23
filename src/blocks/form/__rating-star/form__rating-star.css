@@ -1,4 +1,5 @@
 .form__rating-star {
   width: 53px;
   height: 50px;
+  cursor: pointer;
 };

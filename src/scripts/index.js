@@ -1,6 +1,5 @@
 import '../pages/index.css';
 
-const form = document.querySelector('.form');
 const textarea = document.querySelector('.form__comment');
 const counter = document.querySelector('.form__comment-number');
 const fileInput = document.querySelector('.form__file');
