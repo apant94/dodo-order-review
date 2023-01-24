@@ -3,6 +3,12 @@
   display: inline-block;
   padding-left: 32.3px;
   width: 85%;
+  font-weight: var(--font-weigth-s);
+  font-size: var(--paragraph-size);
+  line-height: 1.33;
+  color: var(--text-color);
+  margin: 0;
+  opacity: var(--text-opacity);
 }
 
 .form__terms-label::before {
