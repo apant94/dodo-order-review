@@ -15,7 +15,7 @@
 .form__container_type_comment{position:relative}
 .form__container_type_terms{display:inline-block;width:100%}
 .form__input-title{color:var(--title-color);font-size:var(--text-size);font-weight:var(--font-weigth-s);line-height:1.33;margin:0}
-.form__rating-source{height:0;opacity:0;position:absolute;width:0;z-index:-1}
+.form__rating-source{height:0;opacity:0;position:absolute;visibility:hidden;width:0;z-index:-1}
 .form__rating-wrapper{display:flex;flex-direction:row-reverse;height:50px;justify-content:space-between;width:100%}
 .form__rating-item{height:.1px;opacity:0;position:absolute;width:.1px;z-index:-1}.form__rating-item:checked~.form__rating-label .form__rating-star,.form__rating-item:focus~.form__rating-label .form__rating-star{color:#ff6900}
 .form__rating-label{color:transparent;height:50px;width:53px}
