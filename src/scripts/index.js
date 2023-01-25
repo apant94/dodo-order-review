@@ -44,25 +44,19 @@ function countFiles(evt) {
 fileInput.addEventListener('change', countFiles);
 
 // Добавление маски в виде +7 на input телефона
-// function getInputNumbersValue(input) {
-//   return input.value.replace(/\D/g, '');
-// }
 
-// function onPhoneInput(e) {
-//   const input = e.target;
-//   const inputNumbersValue = getInputNumbersValue(input);
-
-//   if (!inputNumbersValue) {
-//     return input.value = '';
-//   };
-// };
+function onPhoneInput(e) {
+  // устанавливаем ограничение на буквы и остальные символы
+  phoneInput.value = e.target.value.replace(/[^\d+]/g,'');
+};
 
 function onPhoneClick() {
+  // устанавливаем изначальное значение +7
   return phoneInput.value = '+7';
-}
+};
 
 phoneInput.addEventListener('click', onPhoneClick);
-// phoneInput.addEventListener('input', onPhoneInput);
+phoneInput.addEventListener('input', onPhoneInput);
 
 // изменение активности кнопки сабмита в зависимости от checked
 const toggleButtonState = () => {

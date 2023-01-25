@@ -1,10 +1,17 @@
 .header__pizza-image {
   position: absolute;
-  width: 126px;
-  height: 220px;
-  top: 0px;
+  width: 134px;
+  height: 200px;
+  top: 17px;
   right: 0px;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
+}
+
+@media screen and (max-width: 320px) {
+  .header__pizza-image {
+    width: 115px;
+    height: 171px;
+  }
 }
