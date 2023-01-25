@@ -24,7 +24,6 @@
 .form__file-container{border:.9px solid var(--orange-color);border-radius:96px;height:46px;position:relative;width:100%}
 .form__file{height:.1px;opacity:0;overflow:hidden;position:absolute;width:.1px;z-index:-1}
 .form__file-button{align-items:center;cursor:pointer;display:flex;height:100%;justify-content:center;width:100%}
-.form__file-icon{height:21px;left:17px;position:absolute;top:12.5px;width:13.4px}
 .form__file-text{color:var(--orange-color);font-size:var(--button-text-size);font-weight:var(--font-weigth-s);line-height:1.41;transform:translateY(-10%)}
 .form__paragraph{color:var(--text-color);font-size:var(--paragraph-size);font-weight:var(--font-weigth-s);line-height:1.33;margin:0;opacity:var(--text-opacity)}
 .form__phone{background-color:transparent;border:.9px solid var(--input-border-color);border-radius:var(--input-border-radius);color:var(--title-color);font-size:var(--text-size);font-weight:var(--font-weigth-s);height:21.8px;line-height:1.45;padding:15.5px 14.6px}.form__phone:focus{border:1px solid var(--orange-color);outline:none!important}
