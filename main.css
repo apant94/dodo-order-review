@@ -39,7 +39,7 @@
 .footer__info-item{color:var(--text-color);font-size:var(--footer-info-size);font-weight:var(--font-weigth-s);line-height:1.43;opacity:var(--text-opacity);text-decoration:none}.footer__info-item:hover{opacity:1}
 .footer__logo{height:13px;margin:3px 0 0;width:110px}
 .footer__copyright{color:var(--text-color);font-size:var(--footer-copyright-size);font-weight:var(--font-weigth-s);line-height:1;margin:0;opacity:var(--text-opacity)}
-.popup{align-items:center;background-color:#1a1a1a;bottom:0;display:flex;flex-direction:column;left:0;min-width:320px;opacity:0;padding-bottom:70px;position:fixed;right:0;top:-70px;transform:translateY(70px);transition:visibility .5s,opacity .5s linear;visibility:hidden;z-index:3}
+.popup{align-items:center;background-color:#1a1a1a;bottom:0;display:flex;flex-direction:column;left:0;min-width:320px;opacity:0;padding-bottom:192px;position:fixed;right:0;top:-192px;transform:translateY(192px);transition:visibility .5s,opacity .5s linear;visibility:hidden;z-index:3}
 .popup_opened{opacity:1;visibility:visible}
 .popup__check-icon{height:117px;margin:43px 0 0;width:118px}
 .popup__text{color:var(--title-color);font-size:var(--popup-text-size);font-weight:var(--font-weigth-s);line-height:1.44;margin:23px auto 0;text-align:center;width:65%}
