@@ -6,7 +6,7 @@
   --orange-color: #FF6900;
   --disabled-button-color: #E2E2E9;
   --separator-border-color: rgba(255, 255, 255, .2);
-  --title-size: 56px;
+  --title-size: 53px;
   --text-size: 15px;
   --counter-size: 10.5px;
   --footer-info-size: 14px;
@@ -15,8 +15,6 @@
   --paragraph-size: 12px;
   --popup-text-size: 14px;
   --font-weigth-s: 400;
-  --font-weigth-m: 480;
-  --font-weigth-l: 600;
   --input-border-radius: 11.5px;
   --text-opacity: .7;
   background: #1A1A1A;

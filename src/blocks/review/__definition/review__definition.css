@@ -1,7 +1,8 @@
 .review__definition {
-  margin: 10px 0 0;
+  margin: 16px 0 0;
   color: var(--title-color);
   font-weight: var(--font-weigth-s);
   font-size: var(--text-size);
-  line-height: 1.44;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
 }
