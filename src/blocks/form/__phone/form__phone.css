@@ -2,8 +2,8 @@
   border: 0.9px solid var(--input-border-color);
   background-color: transparent;
   border-radius: var(--input-border-radius);
-  height: calc(51px - 2 * 14.6px);
-  padding: 15.5px 14.6px;
+  height: calc(51px - 2 * 16.3px);
+  padding: 16.3px 15.3px;
   color: var(--title-color);
   font-weight: var(--font-weigth-s);
   font-size: var(--text-size);
@@ -13,4 +13,12 @@
 .form__phone:focus {
   outline: none !important;
   border: 1px solid var(--orange-color);
+}
+
+@media screen and (max-width: 320px) {
+  .form__phone {
+    font-size: var(--text-size);
+    height: calc(46px - 2 * 16.3px);
+    padding: 16.3px 15.3px;
+  }
 }

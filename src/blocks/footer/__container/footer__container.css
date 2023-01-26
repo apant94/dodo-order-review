@@ -2,3 +2,9 @@
   display: flex;
   gap: 8px;
 }
+
+@media screen and (max-width: 320px) {
+  .footer__container {
+    gap: 7px;
+  }
+}

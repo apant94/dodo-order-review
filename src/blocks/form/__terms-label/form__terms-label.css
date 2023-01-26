@@ -50,3 +50,21 @@
 .form__terms:checked + .form__terms-label::before {
   background-color: var(--orange-color);
 }
+
+@media screen and (max-width: 320px) {
+  .form__terms-label {
+    padding-left: 25px;
+    font-size: calc(var(--paragraph-size) * .85);
+  }
+
+  .form__terms-label::before {
+    width: 15.4px;
+    height: 15.4px;
+  }
+
+  .form__terms-label::after {
+    left: 2.7px;
+    width: 10.6px;
+    height: 8.8px;  
+  }  
+}

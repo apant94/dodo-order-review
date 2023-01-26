@@ -7,8 +7,8 @@
   background-color: transparent;
   color: var(--title-color);
   font-weight: var(--font-weigth-s);
-  font-size: var(--text-size);
-  line-height: 1.45;
+  font-size: var(--comment-text-size);
+  line-height: 1.41;
 }
 
 .form__comment::placeholder {
@@ -18,4 +18,10 @@
 .form__comment:focus {
   outline: none !important;
   border: 1px solid var(--orange-color);
+}
+
+@media screen and (max-width: 320px) {
+  .form__comment {
+    font-size: calc(var(--comment-text-size) * .85);
+  }
 }

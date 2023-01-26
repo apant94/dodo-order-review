@@ -10,3 +10,9 @@
 .footer__info-item:hover {
   opacity: 1;
 }
+
+@media screen and (max-width: 320px) {
+  .footer__info-item {
+    font-size: calc(var(--footer-info-size) * .85);
+  }
+}

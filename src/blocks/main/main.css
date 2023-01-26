@@ -3,3 +3,10 @@
   padding-bottom: 32px;
   border-bottom: .6px solid var(--separator-border-color);
 }
+
+@media screen and (max-width: 320px) {
+  .main {
+    margin: 20px auto 0;
+    padding-bottom: 26px;
+  }
+}
