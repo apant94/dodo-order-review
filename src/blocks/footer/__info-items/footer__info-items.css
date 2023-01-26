@@ -6,3 +6,9 @@
   padding: 0;
   margin: 0;
 }
+
+@media screen and (max-width: 320px) {
+  .footer__info-items {
+    gap: 7px;
+  }
+}

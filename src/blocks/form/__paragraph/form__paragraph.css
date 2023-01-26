@@ -6,3 +6,9 @@
   margin: 0;
   opacity: var(--text-opacity);
 }
+
+@media screen and (max-width: 320px) {
+  .form__paragraph {
+    font-size: calc(var(--paragraph-size) * .85);
+  }
+}

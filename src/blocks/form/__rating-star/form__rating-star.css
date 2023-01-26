@@ -1,5 +1,12 @@
 .form__rating-star {
+  display: block;
   width: 53px;
   height: 50px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+  .form__rating-star {
+    height: 45px;
+  }
 }
