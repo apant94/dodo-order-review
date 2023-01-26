@@ -8,7 +8,7 @@
 .header__pizza-image{background-repeat:no-repeat;background-size:contain;height:200px;position:absolute;right:0;top:17px;width:134px;z-index:-1}@media screen and (max-width:320px){.header__pizza-image{height:171px;width:115px}}
 .main{border-bottom:.6px solid var(--separator-border-color);margin:22px auto 0;padding-bottom:32px}@media screen and (max-width:320px){.main{margin:20px auto 0;padding-bottom:26px}}
 .review{display:flex;flex-direction:column;justify-content:center}
-.review__title{color:var(--title-color);font-size:var(--title-size);font-weight:var(--font-weigth-s);line-height:1;margin:0}@media screen and (max-width:320px){.review__title{font-size:calc(var(--title-size)*.86)}}
+.review__title{color:var(--title-color);font-size:var(--title-size);font-weight:var(--font-weigth-s);line-height:1;margin:0;width:70%}@media screen and (max-width:320px){.review__title{font-size:calc(var(--title-size)*.86)}}
 .review__definition{color:var(--title-color);font-size:var(--text-size);font-weight:var(--font-weigth-s);letter-spacing:-.02em;line-height:1.33;margin:16px 0 0}@media screen and (max-width:320px){.review__definition{font-size:calc(var(--text-size)*.86);margin:13.76px 0 0}}
 .form{display:flex;flex-direction:column;gap:30px;margin-top:30px}@media screen and (max-width:320px){.form{gap:19px;margin-top:26px}}
 .form__container{display:flex;flex-direction:column;gap:11px}.form__container:nth-child(4){border-bottom:1.3px solid var(--separator-border-color);padding-bottom:22px}
