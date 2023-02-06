@@ -10,6 +10,9 @@ const termsInput = document.querySelector('.form__terms');
 const submitBtn = document.querySelector('.form__submit');
 const popup = document.querySelector('.popup');
 const popupText = popup.querySelector('.popup__text');
+const rtStars = document.querySelectorAll('.form__rating-item');
+const rt4 = document.querySelector('#rating4');
+const rt5 = document.querySelector('#rating5');
 
 // Растягивание textarea по мере заполнения отзыва и заполнение счетчика
 function putComment() {
@@ -23,6 +26,7 @@ function onCommentInput() {
   this.style.height = (this.scrollHeight - 38) + "px";
 };
 
+// устанавливаем счетчик символов
 function countSymbols() {
   counter.textContent = `${textarea.value.length}`;
 };
@@ -31,7 +35,7 @@ putComment();
 
 
 // Отображение количества выбранных файлов
-function countFiles(evt) {
+function countFiles() {
   let fileCounter = '';
 
   if (this.files && this.files.length >= 1) {
@@ -41,7 +45,7 @@ function countFiles(evt) {
   if (fileCounter) {
     fileText.textContent = 'Выбрано файлов: ' + fileCounter;
   }
-}
+};
 
 fileInput.addEventListener('change', countFiles);
 
@@ -72,30 +76,51 @@ const toggleButtonState = () => {
   }
 };
 
-termsInput.addEventListener('change', toggleButtonState)
+termsInput.addEventListener('change', toggleButtonState);
 
 
-// редактируем текст попапа в зависимости от оценки
+// Установление обязательного введения номера телефона
+// удаление атрибута 'обязательно' на инпуте телефона
+function deleteRequiredPhone() {
+  phoneInput.removeAttribute('required');
+};
+// добавление атрибута 'обязательно' на инпуте телефона
+function putRequiredPhone() {
+  phoneInput.setAttribute('required', '');
+};
+// функция изменения состояния
+function editRequiredOnPhoneInput() {
+  if (rt4.checked || rt5.checked) {
+    deleteRequiredPhone();
+  } else {
+    putRequiredPhone();
+  }
+};
+
+Array.from(rtStars).forEach((star) => {
+  star.addEventListener('change', editRequiredOnPhoneInput);
+});
+
+
+// Редактируем текст попапа в зависимости от оценки
 // открытие попапа
 function openPopup() {
   popup.classList.add('popup_opened');
-}
+};
 // изменяем ширину поля с текстом для реализации необходимых переносов
 function editPopupTextWidth(width) {
   popupText.style.width = `${width}%`;
-}
+};
 
+// изменяем текст в попапе
 function editPopupText() {
-  const rt4 = document.querySelector('#rating4');
-  const rt5 = document.querySelector('#rating5');
-
   if (rt5.checked) {
-    popupText.textContent = 'Спасибо! Рады, что вам понравилось.'; 
+    popupText.textContent = 'Спасибо! Рады, что вам понравилось.';
   } else if (rt4.checked) {
     popupText.textContent = 'Спасибо! Будем стараться, чтобы ваша оценка улучшилась.';
     editPopupTextWidth(58);
   } else {
-    popupText.textContent = 'Спасибо! Нам жаль, что так вышло. Мы разберемся и свяжемся с вами.'; 
+    popupText.textContent = 'Спасибо! Нам жаль, что так вышло. Мы разберемся и свяжемся с вами.';
   }
 }; 
 
@@ -103,6 +128,7 @@ function onSubmit(e) {
   e.preventDefault();
   editPopupText()
   openPopup();
-}
+};
 
 form.addEventListener('submit', onSubmit); 
+
