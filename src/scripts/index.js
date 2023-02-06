@@ -50,10 +50,20 @@ function countFiles() {
 fileInput.addEventListener('change', countFiles);
 
 
-// Добавление маски в виде +7 на input телефона
-function onPhoneInput(e) {
+// Добавление маски в виде +7 и пробелов на input телефона
+function onPhoneInput() {
   // устанавливаем ограничение на буквы и остальные символы
-  phoneInput.value = e.target.value.replace(/[^\d+]/g,'');
+  const phoneNumber = this.value.replace(/[^\d+]/g,'');
+  
+  //устанавливаем пробелы в нужных местах
+  let newNumber = '';
+  for (let i = 0; i < Math.min(phoneNumber.length, 12); i++) {
+    newNumber += phoneNumber[i];
+    if ((i == 1) || (i == 4) || (i == 7) || (i == 9)) {
+      newNumber += ' ';
+    }
+  }
+  this.value = newNumber;
 };
 
 function onPhoneClick() {
@@ -63,7 +73,6 @@ function onPhoneClick() {
 
 phoneInput.addEventListener('click', onPhoneClick);
 phoneInput.addEventListener('input', onPhoneInput);
-
 
 // изменение активности кнопки сабмита в зависимости от checked
 const toggleButtonState = () => {
@@ -79,15 +88,17 @@ const toggleButtonState = () => {
 termsInput.addEventListener('change', toggleButtonState);
 
 
-// Установление обязательного введения номера телефона
+// Установление обязательного введения номера телефона в зависимости от выбранной оценки
 // удаление атрибута 'обязательно' на инпуте телефона
 function deleteRequiredPhone() {
   phoneInput.removeAttribute('required');
 };
+
 // добавление атрибута 'обязательно' на инпуте телефона
 function putRequiredPhone() {
   phoneInput.setAttribute('required', '');
 };
+
 // функция изменения состояния
 function editRequiredOnPhoneInput() {
   if (rt4.checked || rt5.checked) {
@@ -107,12 +118,12 @@ Array.from(rtStars).forEach((star) => {
 function openPopup() {
   popup.classList.add('popup_opened');
 };
-// изменяем ширину поля с текстом для реализации необходимых переносов
+// изменение ширины поля с текстом для реализации необходимых переносов
 function editPopupTextWidth(width) {
   popupText.style.width = `${width}%`;
 };
 
-// изменяем текст в попапе
+// изменение текста в попапе
 function editPopupText() {
   if (rt5.checked) {
     popupText.textContent = 'Спасибо! Рады, что вам понравилось.';
