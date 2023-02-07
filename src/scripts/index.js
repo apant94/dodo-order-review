@@ -55,11 +55,12 @@ function onPhoneInput() {
 };
 
 let isPhoneClicked = false;
+
 function onPhoneClick() {
   if(!isPhoneClicked) {
   // устанавливаем изначальное значение +7
   phoneInput.value = '+7';
-  // меняем значение флага, чтобы функция работала при 1 клике
+  // меняем значение флага, чтобы функция работала только увпри первом клике
   isPhoneClicked = true;
   return;
   }
