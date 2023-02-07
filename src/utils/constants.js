@@ -12,4 +12,4 @@ const rtStars = document.querySelectorAll('.form__rating-item');
 const rt4 = document.querySelector('#rating4');
 const rt5 = document.querySelector('#rating5');
 
-export { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5};
+export { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5 };
