@@ -1,4 +1,5 @@
 import { phoneInput, form, starPath, rtStars, rateErrorText, phoneErrorText, phoneParagraphText } from '../utils/constants.js';
+import { openPopup, editPopupText } from './popupText.js';
 
 // добавляет класс с ошибкой телефона
 const showPhoneError = () => {
@@ -39,14 +40,8 @@ const hasInvalidRatingInput = () => {
 };
 
 // проверяет наличие невалидных полей при вводе
-const isValid = () => {
-  if (hasInvalidPhoneInput()) {
-    showPhoneError();
-  } else {
-    hidePhoneError();
-  };
-
-  Array.from(rtStars).forEach((inputElement) => {
+const isValidRating = () => {
+    Array.from(rtStars).forEach((inputElement) => {
     if (!inputElement.validity.valid) {
       showRatingError();
     } else {
@@ -55,31 +50,36 @@ const isValid = () => {
   });
 };
 
-
-// проверяет наличие невалидных полей при сабмите
-const hasInvalidInputs = (e) => {
+const isValidPhone = () => {
   if (hasInvalidPhoneInput()) {
     showPhoneError();
   } else {
     hidePhoneError();
   };
+};
 
+// проверяет наличие невалидных полей при сабмите
+const hasInvalidInputs = (e) => {
+  e.preventDefault();
   if (hasInvalidRatingInput()) {
-    showRatingError();
-  } else {
-    hideRatingError();
+    isValidRating();
   };
-  
-  // if (!hasInvalidRatingInput() && !hasInvalidPhoneInput()) {
-  //   e.preventDefault();
-  //   form.submit();
-  // };
-}
 
+  if (hasInvalidPhoneInput()) {
+    isValidPhone();
+  };
+
+  if (!hasInvalidRatingInput() && !hasInvalidPhoneInput()) {
+    editPopupText();
+    openPopup();
+  };
+};
+
+// Слушатель введения символов в инпуты
 Array.from(rtStars).forEach((inputElement) => {
-  inputElement.addEventListener('input', isValid);
+  inputElement.addEventListener('input', isValidRating);
 });
-phoneInput.addEventListener('input', isValid);
-form.addEventListener('submit', hasInvalidInputs);
+phoneInput.addEventListener('input', isValidPhone);
 
-export { hasInvalidInputs };
+// Сабмит формы
+form.addEventListener('submit', hasInvalidInputs);
