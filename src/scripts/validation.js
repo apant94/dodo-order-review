@@ -57,7 +57,7 @@ const isValid = () => {
 
 
 // проверяет наличие невалидных полей при сабмите
-const hasInvalidInputs = () => {
+const hasInvalidInputs = (e) => {
   if (hasInvalidPhoneInput()) {
     showPhoneError();
   } else {
@@ -70,9 +70,10 @@ const hasInvalidInputs = () => {
     hideRatingError();
   };
   
-  if (!hasInvalidRatingInput() && !hasInvalidPhoneInput()) {
-    form.submit();
-  };
+  // if (!hasInvalidRatingInput() && !hasInvalidPhoneInput()) {
+  //   e.preventDefault();
+  //   form.submit();
+  // };
 }
 
 Array.from(rtStars).forEach((inputElement) => {

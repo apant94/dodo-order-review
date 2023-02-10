@@ -1,7 +1,7 @@
 import '../pages/index.css';
-import { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5 } from '../utils/constants.js';
-import './validation.js';
-import { hasInvalidInputs } from './validation.js';
+import { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5, starPath, rateErrorText, phoneErrorText, phoneParagraphText } from '../utils/constants.js';
+// import './validation.js';
+// import { hasInvalidInputs } from './validation.js';
 
 // Растягивание textarea по мере заполнения отзыва и заполнение счетчика
 function putComment() {
@@ -88,11 +88,13 @@ termsInput.addEventListener('change', toggleButtonState);
 // удаление атрибута 'обязательно' на инпуте телефона
 function deleteRequiredPhone() {
   phoneInput.removeAttribute('required');
+  phoneInput.removeAttribute('minlength');
 };
 
 // добавление атрибута 'обязательно' на инпуте телефона
 function putRequiredPhone() {
   phoneInput.setAttribute('required', '');
+  phoneInput.setAttribute('minlength', '16');
 };
 
 // функция изменения состояния
@@ -131,15 +133,97 @@ function editPopupText() {
   }
 }; 
 
-function onSubmit(e) {
-  e.preventDefault();
-  if (hasInvalidInputs) {
-    return;
-  } else {
-  editPopupText()
-  openPopup();
-  }
+// добавляет класс с ошибкой телефона
+const showPhoneError = () => {
+  phoneInput.classList.add('form__phone_type_error');
+  phoneErrorText.removeAttribute('hidden');
+  phoneParagraphText.style.visibility = 'hidden';
 };
 
-form.addEventListener('submit', onSubmit); 
+//удаляет класс с ошибкой телефона
+const hidePhoneError = () => {
+  phoneInput.classList.remove('form__phone_type_error');
+  phoneErrorText.setAttribute('hidden', '');
+  phoneParagraphText.style.visibility = 'visible';
+};
+
+// добавляет класс с ошибкой рейтинга звезд
+const showRatingError = () => {
+  starPath.setAttribute('stroke', "#FF3B30");
+  rateErrorText.removeAttribute('hidden');
+};
+
+// удаляет класс с ошибкой рейтинга звезд
+const hideRatingError = () => {
+  starPath.setAttribute('stroke', "#FF6900");
+  rateErrorText.setAttribute('hidden', '');
+};
+
+// проверяет наличие невалидного телефона
+const hasInvalidPhoneInput = () => {
+  return !phoneInput.validity.valid;
+}; 
+
+// проверяет наличие невалидного рейтинга
+const hasInvalidRatingInput = () => {
+  return Array.from(rtStars).some((inputElement) => {
+    return !inputElement.validity.valid;
+  });
+};
+
+// проверяет наличие невалидных полей при вводе
+const isValidRating = () => {
+    Array.from(rtStars).forEach((inputElement) => {
+    if (!inputElement.validity.valid) {
+      showRatingError();
+    } else {
+      hideRatingError();
+    };
+  });
+};
+
+const isValidPhone = () => {
+  if (hasInvalidPhoneInput()) {
+    showPhoneError();
+  } else {
+    hidePhoneError();
+  };
+}
+
+// проверяет наличие невалидных полей при сабмите
+const hasInvalidInputs = (e) => {
+  e.preventDefault();
+  if (hasInvalidRatingInput()) {
+    isValidRating();
+  };
+
+  if (hasInvalidPhoneInput()) {
+    isValidPhone();
+  };
+
+  if (!hasInvalidRatingInput() && !hasInvalidPhoneInput()) {
+    editPopupText()
+    openPopup();
+  };
+};
+
+// function onSubmit(e) {
+//   e.preventDefault();
+
+//   if (hasInvalidInputs) {
+//     return;
+//   };
+//   if (!hasInvalidInputs) {
+//   editPopupText()
+//   openPopup();
+//   }
+// };
+
+Array.from(rtStars).forEach((inputElement) => {
+  inputElement.addEventListener('input', isValidRating);
+});
+phoneInput.addEventListener('input', isValidPhone);
+form.addEventListener('submit', hasInvalidInputs);
+
+// form.addEventListener('submit', onSubmit); 
 
