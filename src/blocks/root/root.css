@@ -5,6 +5,8 @@
   --input-border-color: #C2C2C2;
   --orange-color: #FF6900;
   --disabled-button-color: #E2E2E9;
+  --error-border-color: #FF3B30;
+  --error-text-color: #FF3B30;
   --separator-border-color: rgba(255, 255, 255, .2);
   --title-size: 53px;
   --text-size: 15px;

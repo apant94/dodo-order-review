@@ -1,0 +1,9 @@
+.form__error-text_position_extra {
+  top: 90px;
+}
+
+@media screen and (max-width: 320px) {
+  .form__error-text_position_extra {
+    top: 83px;
+  }
+}

@@ -33,15 +33,15 @@
             Поставьте оценку заказу и оставьте отзыв. Мы&nbsp;свяжемся с вами,
             если что&#8209;то пошло не так
           </p>
-          <form class="form">
+          <form class="form" novalidate>
             <div class="form__container">
               <h2 class="form__input-title">1. Оцените заказ</h2>
+              <div class="form__rating-wrapper">
                 <svg class="form__rating-source">
                   <symbol id="star" viewBox="0 0 53 50">   
-                    <path fill="currentColor" stroke="#FF6900" stroke-width="1.132" d="M33.015 16.419c.254.62.84 1.04 1.51 1.082l16.527 1.021a.616.616 0 0 1 .362 1.083l-12.62 10.801a1.748 1.748 0 0 0-.556 1.763l4.146 16.138a.616.616 0 0 1-.922.677L27.37 40.259a1.748 1.748 0 0 0-1.863.015l-13.952 8.94a.616.616 0 0 1-.931-.663l3.897-16.196a1.748 1.748 0 0 0-.584-1.754L1.153 19.995a.616.616 0 0 1 .346-1.089l16.51-1.275a1.748 1.748 0 0 0 1.493-1.105l6.069-15.488a.616.616 0 0 1 1.144-.009l6.3 15.39Z">
+                    <path id="star-path" fill="currentColor" stroke="#FF6900" stroke-width="1.132" d="M33.015 16.419c.254.62.84 1.04 1.51 1.082l16.527 1.021a.616.616 0 0 1 .362 1.083l-12.62 10.801a1.748 1.748 0 0 0-.556 1.763l4.146 16.138a.616.616 0 0 1-.922.677L27.37 40.259a1.748 1.748 0 0 0-1.863.015l-13.952 8.94a.616.616 0 0 1-.931-.663l3.897-16.196a1.748 1.748 0 0 0-.584-1.754L1.153 19.995a.616.616 0 0 1 .346-1.089l16.51-1.275a1.748 1.748 0 0 0 1.493-1.105l6.069-15.488a.616.616 0 0 1 1.144-.009l6.3 15.39Z">
                   </symbol>
                 </svg>
-              <div class="form__rating-wrapper">
                 <input class="form__rating-item" id="rating5" type="radio" name="rating" value="5" required>
                 <label class="form__rating-label" for="rating5">
                   <svg class="form__rating-star"><use xlink:href="#star"></svg>
@@ -63,6 +63,7 @@
                   <svg class="form__rating-star"><use xlink:href="#star"></svg>
                 </label>
               </div>
+              <span class="form__error-text form__error-text_position_normal" hidden>Поставьте оценку заказу</span>
             </div>
             <div class="form__container form__container_type_comment">
               <h2 class="form__input-title">
@@ -104,12 +105,13 @@
                 type="tel"
                 name="form__phone"
                 id="form__phone"
-                maxlength="18"
                 required
+                minlength="16"
               >
-              <p class="form__paragraph">
+              <p class="form__paragraph form__paragraph_visible">
                 Так мы найдем ваш заказ и сможем улучшить именно ваш опыт
               </p>
+              <span class="form__error-text form__error-text_position_extra" hidden>Введите номер телефона</span>
             </div>
             <div class="form__container form__container_type_terms">
               <input
