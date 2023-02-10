@@ -20,6 +20,9 @@
 @import url(../blocks/form/__rating-item/form__rating-item.css);
 @import url(../blocks/form/__rating-label/form__rating-label.css);
 @import url(../blocks/form/__rating-star/form__rating-star.css);
+@import url(../blocks/form/__error-text/form__error-text.css);
+@import url(../blocks/form/__error-text/_position/form__error-text_position_normal.css);
+@import url(../blocks/form/__error-text/_position/form__error-text_position_extra.css);
 @import url(../blocks/form/__comment/form__comment.css);
 @import url(../blocks/form/__comment-counter/form__comment-counter.css);
 @import url(../blocks/form/__file-container/form__file-container.css);
@@ -28,6 +31,7 @@
 @import url(../blocks/form/__file-text/form__file-text.css);
 @import url(../blocks/form/__paragraph/form__paragraph.css);
 @import url(../blocks/form/__phone/form__phone.css);
+@import url(../blocks/form/__phone/_type/form__phone_type_error.css);
 @import url(../blocks/form/__terms/form__terms.css);
 @import url(../blocks/form/__terms-label/form__terms-label.css);
 @import url(../blocks/form/__terms-link/form__terms-link.css);
