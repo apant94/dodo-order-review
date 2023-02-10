@@ -1,25 +1,84 @@
-import { phoneInput } from '../utils/constants.js';
+import { phoneInput, form, starPath, rtStars, rateErrorText, phoneErrorText, phoneParagraphText } from '../utils/constants.js';
 
-// Функция, которая добавляет класс с ошибкой
-const showInputError = (element) => {
-  element.classList.add('form__phone_type_error');
+// добавляет класс с ошибкой телефона
+const showPhoneError = () => {
+  phoneInput.classList.add('form__phone_type_error');
+  phoneErrorText.removeAttribute('hidden');
+  phoneParagraphText.style.visibility = 'hidden';
 };
 
-// Функция, которая удаляет класс с ошибкой
-const hideInputError = (element) => {
-  element.classList.remove('form__phone_type_error');
+//удаляет класс с ошибкой телефона
+const hidePhoneError = () => {
+  phoneInput.classList.remove('form__phone_type_error');
+  phoneErrorText.setAttribute('hidden', '');
+  phoneParagraphText.style.visibility = 'visible';
 };
 
-// Функция, которая проверяет валидность поля
+// добавляет класс с ошибкой рейтинга звезд
+const showRatingError = () => {
+  starPath.setAttribute('stroke', "#FF3B30");
+  rateErrorText.removeAttribute('hidden');
+};
+
+// удаляет класс с ошибкой рейтинга звезд
+const hideRatingError = () => {
+  starPath.setAttribute('stroke', "#FF6900");
+  rateErrorText.setAttribute('hidden', '');
+};
+
+// проверяет наличие невалидного телефона
+const hasInvalidPhoneInput = () => {
+  return !phoneInput.validity.valid;
+}; 
+
+// проверяет наличие невалидного рейтинга
+const hasInvalidRatingInput = () => {
+  return Array.from(rtStars).some((inputElement) => {
+    return !inputElement.validity.valid;
+  });
+};
+
+// проверяет наличие невалидных полей при вводе
 const isValid = () => {
-  if (!phoneInput.validity.valid) {
-    // Если поле не проходит валидацию, покажем ошибку
-    showInputError(phoneInput);
+  if (hasInvalidPhoneInput()) {
+    showPhoneError();
   } else {
-    // Если проходит, скроем
-    hideInputError(phoneInput);
-  }
+    hidePhoneError();
+  };
+
+  Array.from(rtStars).forEach((inputElement) => {
+    if (!inputElement.validity.valid) {
+      showRatingError();
+    } else {
+      hideRatingError();
+    };
+  });
 };
 
-// Вызовем функцию isValid на каждый ввод символа
+
+// проверяет наличие невалидных полей при сабмите
+const hasInvalidInputs = () => {
+  if (hasInvalidPhoneInput()) {
+    showPhoneError();
+  } else {
+    hidePhoneError();
+  };
+
+  if (hasInvalidRatingInput()) {
+    showRatingError();
+  } else {
+    hideRatingError();
+  };
+  
+  if (!hasInvalidRatingInput() && !hasInvalidPhoneInput()) {
+    form.submit();
+  };
+}
+
+Array.from(rtStars).forEach((inputElement) => {
+  inputElement.addEventListener('input', isValid);
+});
 phoneInput.addEventListener('input', isValid);
+form.addEventListener('submit', hasInvalidInputs);
+
+export { hasInvalidInputs };

@@ -1,17 +1,18 @@
 import '../pages/index.css';
 import { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5 } from '../utils/constants.js';
 import './validation.js';
+import { hasInvalidInputs } from './validation.js';
 
 // Растягивание textarea по мере заполнения отзыва и заполнение счетчика
 function putComment() {
-  textarea.setAttribute("style", "height:" + (textarea.scrollHeight - 38) + "px;");
-  textarea.addEventListener("input", onCommentInput, false);
-  textarea.addEventListener("input", countSymbols);
+  textarea.setAttribute('style', 'height:' + (textarea.scrollHeight - 38) + 'px;');
+  textarea.addEventListener('input', onCommentInput, false);
+  textarea.addEventListener('input', countSymbols);
 };
 
 function onCommentInput() {
   this.style.height = '54px';
-  this.style.height = (this.scrollHeight - 38) + "px";
+  this.style.height = (this.scrollHeight - 38) + 'px';
 };
 
 // устанавливаем счетчик символов
@@ -132,8 +133,12 @@ function editPopupText() {
 
 function onSubmit(e) {
   e.preventDefault();
+  if (hasInvalidInputs) {
+    return;
+  } else {
   editPopupText()
   openPopup();
+  }
 };
 
 form.addEventListener('submit', onSubmit); 
