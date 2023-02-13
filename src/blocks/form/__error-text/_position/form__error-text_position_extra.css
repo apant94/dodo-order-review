@@ -1,9 +1,9 @@
 .form__error-text_position_extra {
-  top: 90px;
+  top: 119px;
 }
 
 @media screen and (max-width: 320px) {
   .form__error-text_position_extra {
-    top: 83px;
+    top: 108px;
   }
 }

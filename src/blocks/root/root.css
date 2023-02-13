@@ -8,11 +8,11 @@
   --error-border-color: #FF3B30;
   --error-text-color: #FF3B30;
   --separator-border-color: rgba(255, 255, 255, .2);
-  --title-size: 53px;
-  --text-size: 15px;
+  --title-size: 72px;
+  --header-text-size: 15px;
+  --text-size: 17px;
   --comment-text-size: 16.3px;
   --counter-size: 10.5px;
-  --footer-info-size: 14px;
   --footer-copyright-size: 16px;
   --button-text-size: 17px;
   --paragraph-size: 12px;

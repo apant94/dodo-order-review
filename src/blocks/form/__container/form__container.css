@@ -7,5 +7,5 @@
 
 .form__container:nth-child(4) {
   border-bottom: 1.3px solid var(--separator-border-color);
-  padding-bottom: 22px;
+  padding-bottom: 40px;
 }

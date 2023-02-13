@@ -3,7 +3,7 @@
   font-size: var(--button-text-size);
   line-height: 1.42;
   color: var(--orange-color);
-  transform: translate(0,-10%);
+  transform: translate(0,-5%);
 }
 
 @media screen and (max-width: 320px) {
