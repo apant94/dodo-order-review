@@ -1,9 +1,9 @@
 .form__error-text_position_normal {
-  bottom: -24px;
+  bottom: -29px;
 }
 
 @media screen and (max-width: 320px) {
   .form__error-text_position_normal {
-    bottom: -16px;
+    bottom: -21px;
   }
 }
