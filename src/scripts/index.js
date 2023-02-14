@@ -6,3 +6,4 @@ import './phoneMask.js';
 import './toggleSubmit';
 import './requirePhone.js';
 import './popupText.js';
+import './footerYear.js';

@@ -15,6 +15,7 @@ const starPath = document.querySelector('#star-path');
 const rateErrorText = document.querySelector('.form__error-text_position_normal');
 const phoneErrorText = document.querySelector('.form__error-text_position_extra');
 const phoneParagraphText = document.querySelector('.form__paragraph_visible');
+const footerYear = document.querySelector('.footer__copyright');
 
 
-export { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5, starPath, rateErrorText, phoneErrorText, phoneParagraphText };
+export { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5, starPath, rateErrorText, phoneErrorText, phoneParagraphText, footerYear };
