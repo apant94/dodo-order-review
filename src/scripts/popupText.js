@@ -1,9 +1,10 @@
-import { popup, popupText, rt4, rt5 } from '../utils/constants.js';
+import { body, popup, popupText, rt4, rt5 } from '../utils/constants.js';
 
 // Редактируем текст попапа в зависимости от оценки
 // открытие попапа
 function openPopup() {
   popup.classList.add('popup_opened');
+  body.style.overflow = 'hidden';
 };
 // изменение ширины поля с текстом для реализации необходимых переносов
 function editPopupTextWidth(width) {

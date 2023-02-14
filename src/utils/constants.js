@@ -1,3 +1,4 @@
+const body = document.querySelector('.root');
 const form = document.querySelector('.form');
 const textarea = document.querySelector('.form__comment');
 const counter = document.querySelector('.form__comment-number');
@@ -18,4 +19,4 @@ const phoneParagraphText = document.querySelector('.form__paragraph_visible');
 const footerYear = document.querySelector('.footer__copyright');
 
 
-export { form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5, starPath, rateErrorText, phoneErrorText, phoneParagraphText, footerYear };
+export { body, form, textarea, counter, fileInput, fileText, phoneInput, termsInput, submitBtn, popup, popupText, rtStars, rt4, rt5, starPath, rateErrorText, phoneErrorText, phoneParagraphText, footerYear };
